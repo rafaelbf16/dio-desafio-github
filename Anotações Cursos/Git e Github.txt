@@ -1,0 +1,98 @@
+- Git criado por Linus Torvalds e sua equipe.
+- Outros: BitKeeper, CVS
+> Github - repositório online de armazenamento do código. É opensource
+Benefícios:
+1 - Controle de Versão, 2 - Armazenamento em nuvem, 3 - Trabalho em equipe, 4 - Melhorar seu código, 5 - Reconhecimento(social)
+
+CLI - Command Line Interface
+- Criar pasta: MKDIR
+- Completa o nome da pasta/arquivo: Tab
+- echo - printa de volta no terminal uma frase/texto
+- comando echo hello > hello.txt (Redireciona o fluxo para um arquivo no caso: .txt)
+- del + pasta = Deleta o que esta dentro da pasta, mas não apaga a pasta/repositório!!! 
+- rmdir workspace /S /Q  Remove o repositório inteiro
+
+Entendendo como o Git funciona por baixo dos panos:
+- SHA1 Secure Hash Algorithm -- Algoritmo de Hash Seguro (Dados encriptados)
+- Pega o arquivo e embaralha de forma específica;
+*Os dados encriptados geram conjunto de caraceres de 40 digitos
+*Forma curta de representar um arquivo...
+
+Ex:openssl sha1 texto.txt (Ele vai encriptar de acordo com o ponto alterado, se for revertido,  os 40 caracteres é gerado novamente igual!
+Ex... Altero uma virgula e coloco ponto "." é gerado um código. Altero novamente para a virgula, o código volta igual ao anterior.
+
+OBJETOS DO GIT - BLOBS, TREES, COMMITS
+1) Blob - bolha (git guarda os arquivos ferando encripação e armazena os metadados com os objetos com o blob - tipo de objeto, tamanho da string/arquivo)
+ex.: echo 'conteudo' | git hash-object --stdin
+> fc31e91b26....... gera o sha1 usando git
+
+ex.: echo -e 'blob 9\0conteudo' | openssl sha1
+>fc31e91b26....... gera o mesmo sha1 
+
+2) Tree - arvores-  contém tbm os metadados e armazenam blobs
+- aponta para um blob que por sua vez tem um Sha1 e guarda o nome do arquivo
+- Blob só guarda o caracter Sha1 e só.
+- Tree guardam os NOMES destes arquivos
+*Tree - tamanho - \0 blob sa4d8s - texto.txt
+*Tree aponta para as blob, outras arvores que consequentemente outras blob e arquivos.
+
+3)Commit - é o objeto + importante de todos.. Vai juntar tudo e da sentido ao que esta fazendo.
+|- Ele aponta: tree, parente, autor... mensagem "inicia ..." e timestamp
+Monta-se uma linha do tempo com histórico de commit.
+* Alterar um arquivo altera toda estrutura daquele commit
+---- Git é um sistema distribuido Seguro devido a estrutura de versões atualizadas dos arquivos por seus commits...
+---- É distribuido pois varias pessoas podem contribuir e terem os commit atualizados (tratando de repositório na nuvem - GitHub por exemplo)
+
+CHAVE SSH e TOKEN
+- entra no GitHub;
+- SSH and GPG;
+- SSH Keys - clica em Add new...
+- Vai no CLI - Git bash;
+Sequencia de comandos para criar/gerar par de chaves..
+- ssh-kegen -t ed25519 -C rafa.@gmai.com (email do github)
+- Local onde é gerado, da enter;
+- Entra com uma senha, pronto foi criada;
+- Entra no caminho onde está o /.ssh;
+- cat id_ed25519.pub    ...Chave publica vai ser gerada;
+- Copia e cola no Github no new SSH key;
+*Precisa ainda fazer outro processo no CLI - git bash.
+- Inicializar o ssh agent:
+... eval $(ssh-agent -s) e da enter;
+Agent pid 12xx (aqui ele starta um projeto)
+- ssh-add id_ed25519  (Passa a chave para o agent);
+...Esta é a chave privada - toda vez que chegar uma criptografia ele vai descriptografar a mensagem.
+Identy added: ..... identidade adicionada
+
+INICIANDO COMANDOS GIT...
+- ls -a (flag para ver arquivos ocultos)
+Configurando..
+$ git config --global user.email "rafael.fortunato@fatec.sp.gov.br"
+$ git config --global user.name Fael
+
+Adc. um arquivo..
+- Markdown .md (forma mais humana de escrever arquivo html)
+# Título nivel 1 = h1 em html
+## Título nivel 2 = h2 em html
+### Título nivel 3 = h3 em html
+#### Título nivel 4 = h4 em html
+##### Título nivel 5 = h5 em html
+
+Criando Commit - GIT
+- Flags... 
+o -a mostra arquivos ocultos
+ex: ls -a
+
+Ciclo do git...
+* Untracked --> Unmodified --> MOdified --> Staged
+~ git add nomeArquivo / git add * / git add. - coloca/move os arquivos para entrar em ação
+  ...Untracked/Unmodified direto para Staged
+~ git commit -m "msg.." - envelopa em uma mensagem e cria objeto commit
+WORKINK DIRECTORY -> STAGING AREA -> LOCAL REPOSITORY E depois para REMOTE REPOSITORY (github)
+
+----------
+Mostrando a origem do repositorio remoto... GitHub
+... git remote add origin https://github.com/rafaelbf16/livro-receitas.git
+
+... git remote -v
+origin  https://github.com/rafaelbf16/livro-receitas.git (fetch)
+origin  https://github.com/rafaelbf16/livro-receitas.git (push)

@@ -1,0 +1,51 @@
+PROJETOS ÁGEIS COM SCRUM -  
+- Tradicional (Waterfall) efeito cascata. "N" meses
+ ~Preditivo. Resistente a mudanças Funcionando só no final.
+- Ágil - é incremental. Divido em partes, princípio interativo.
+ ~Adaptativo, por funcionalidades e ñ processos. 1 mês já pode ter software funcionando
+
+... Cerimônia Scrum:
+Time Box - Tempo máx. para fazer uma cerimônia
+* Sprint: Corrida, arrancada. Máx. 30 dias corridos (ou menos)
+1 - Planejamento da Sprint: Participa o PO, DEVs e SCRUM MASTER. O que fazer? (4h) Como fazer? (4h)
+  São as Product Backlog (Prioridade e detalhamento). Time Box: 8h (Sprint 30 dias)
+  Utiliza o Planning Poker - estimativa de cada tarefa (esforço), verifica se tudo que o PO solicita vai conseguir entregar na Sprint.
+
+2 - Reuniões Diárias (Daily Meeting, ex. 15 minutos)
+  Para o Time... O que fez no dia anterior? O que esta programado para o dia? Qual impedimento?
+  Reunião de pé! Time-Box: 15 min.  Utiliza o Kanbam.
+
+3 - Revisão da Sprint (Review)
+  Time Box: 4h (Sprint 30 dias). Time DEV mostra para PO o trabalho feito.
+
+4 - Retrospectiva da Sprint
+  Ocorre último dia (basicamente o time Dev quem participa) - Lições aprendidas com transparência (Aponta os erros para não errar na frente)
+  Time Box: 3h (Sprint 30 dias)
+--------
+Estoria é conjunto de tarefas.
+ *Tarefa descrita em nível de negócio
+ *Tarefa é um conjunto de atividades que o time de dev deve desempenhar para entregar a ESTÓRIA.
+Epicos é conjunto de histórias.
+--> CRITÉRIO DE ACEITE?  
+- Lista de critérios que precisam ser alcançadaos para US atenda (estoria) os requisitos dos usuários e seja aceita pelo PO!!
+- Define limites as User Stories
+- Objetivo dela? Onde quer chegar?
+* Estimativa de Planejamento (tamanho das tarefas e otmizagem)
+
+PLANNING POKER (Cartas de Poker usadas para o time votar em cada Use Story por complexidade e tempo)
+- Mensuração do esforço e complexidade das tarefas ou estorias
+PLANEJAMENTO... Dividida em 2 etapas...
+-> Pega as Product Backlog e passa para Sprint Backlog (dividindo em tarefas)
+
+STAKEHOLDER / CLIENTE
+Pessoa ou grupo que legitima as ações de uma organização
+
+1 - Daily (tarefas do dia a dia) e Retrospectiva (Baseada na sprint num todo) (Meeting diariamente):
+Máx. 15 min. (O que eu fiz ontem, o que farei hoje, se possuo algum impedimento?)
+ Daily: Time é obrigatório estar.
+ Retro: Scrum Master e Time obrigatório estar
+2 - Refinamento: Cerimonia não oficial, mas importante... Um passo antes da PLANNING (antes da retro e review, ou seja final da Sprint anterior)
+ time dev faz varias perguntas ao PO para entender melhor.
+3 - Review:
+ Time de dev apresenta na reunião o que foi feito na Sprint!! PO e Scrum Master devem estar na reunião.
+ Ver o que se esta sendo entregue. FAZER A VALIDAÇÃO e se AGREGA VALOR AO NEGOCIO.

@@ -1,0 +1,40 @@
+Raciocinio Logico - pensamento estruturado que permite concluir ou resolver algum problema..
+3 Tipos:
+Indução - Tentativa e erro por experimentos, ciências experimentais
+Dedução - Leis e teorias, ciências exatas, ja formuladas.
+Abdução - Conclusão, premissa, processo investigativo (ex.:diagnósticos, ramo policial, detetive)
+
+Seguimentanto:
+Inferência: Sintética (Abdução e indução) e Analítica (dedução) / construção ou análise
+
+**Pilares do Pensamento Computacional**
+Decomposição: Problema complexo é quebrado, separado em problemas menores a fim de detalhar e resolver com mais eficácia.
+Sintese com sentido... Ordem SEQUENCIAL e PARALELO...
+Ex: Cozinhar
+- Detectar as variáveis (Ingredientes)
+- Determinar as Etapas em paralelas ou sequêncial (se existe dependencia entre elas)
+- Executar cada etapa
+- Agregar os ingredientes para finalizar (coerência)
+Ex: Criar um app
+- Finalidade (para que vai ser útil?)
+- Interface
+- Funcionalidades - o que vai fornecer ao cliente?
+- Pré-requisitos - aspectos ou funções que eu preciso para que o app funcione.
+Ex: Artigo
+- O que será abordado? pensar sobre o assunto
+- Estrutura - tópicos que precisa apresentar
+- Conteúdo de cada tópico
+- Textos de conexão (coerência ao artigo)
+
+**RECONHECIMENTO DE PADRÕES
+- Modelo base
+- Estrutura invariante
+- repetição
+EX: Fotos de redes sociais
+- Tem um padrão, pega as informações do metadata compressão técnicas variadas e depois salva no banco de dados (menos armazenamento)
+
+**ABSTRAÇÃO é generalizar
+EX: 2+2=4 ; 3+3=6 ... Posso abstrair usando X+X=Y toda vez que incremento X eu acrescento 2 em Y
+- Características essenciais de um objeto
+
+##ESTUDO DE CASO...UTILIZANDO PENSAMENTO COMPUTACIONAL...

@@ -1,0 +1,25 @@
+Logica de Programação Essencial -
+- Abstração - Pegar o todo e dividir em partes
+
+Algoritmo e Pseudocódicos:
+
+Fluxograma, variáveis e expressões...
+- Variável: espaço na memória do computador destinado a um dado que é alterado durante a execução do algoritmo
+- Declação de variáveis dentro de um pseudocódigo --> no início
+DECLARA nota1: número
+DECLARA nota2: número
+DECLARA nota3: número
+DECLARA nota4: número
+DECLARA media: número
+LEIA (nota1)
+LEIA (nota2)
+LEIA (nota3)
+LEIA (nota4)
+media = (nota1+nota2+nota3+nota4)/4
+IMPRIMIR (media)
+FIM
+****
+
+- 4 tipos de valores: NUMERICAS, CARACTERES, ALFANUMÉRICAS OU LÓGICAS.
+Numéricas: pode ser inteira, decimal, real... Alfanumericas: pode receber Letras e numeros... Logica: Verdadeiro ou Falso
+- Declaração de uma costante - ex: Numero Pi 3,14 não muda!!
